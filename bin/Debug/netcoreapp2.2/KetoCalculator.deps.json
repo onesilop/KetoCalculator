@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "6a372eb56577c95b3ae88c39037d8189b7bb34b6"
+    "signature": "c99f80f6bdbfd49523e6b513f727f0b882b7be7b"
   },
   "compilationOptions": {
     "defines": [
@@ -24,11 +24,11 @@
     ".NETCoreApp,Version=v2.2": {
       "KetoCalculator/1.0.0": {
         "dependencies": {
-          "EntityFramework": "6.3.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.EntityFrameworkCore": "2.2.6",
           "Microsoft.EntityFrameworkCore.Design": "2.2.6",
+          "Microsoft.EntityFrameworkCore.Tools": "2.2.6",
           "Microsoft.NETCore.App": "2.2.0"
         },
         "runtime": {
@@ -38,7 +38,6 @@
           "KetoCalculator.dll": {}
         }
       },
-      "EntityFramework/6.3.0": {},
       "Microsoft.EntityFrameworkCore/2.2.6": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "2.2.6",
@@ -101,6 +100,11 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/2.2.6": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "2.2.6"
         }
       },
       "Remotion.Linq/2.2.0": {
@@ -305,7 +309,7 @@
           "Microsoft.EntityFrameworkCore.InMemory": "2.2.0",
           "Microsoft.EntityFrameworkCore.Relational": "2.2.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0",
-          "Microsoft.EntityFrameworkCore.Tools": "2.2.0",
+          "Microsoft.EntityFrameworkCore.Tools": "2.2.6",
           "Microsoft.Extensions.Caching.Abstractions": "2.2.0",
           "Microsoft.Extensions.Caching.Memory": "2.2.0",
           "Microsoft.Extensions.Caching.SqlServer": "2.2.0",
@@ -1503,12 +1507,6 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
-        },
-        "compileOnly": true
-      },
-      "Microsoft.EntityFrameworkCore.Tools/2.2.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "2.2.6"
         },
         "compileOnly": true
       },
@@ -3266,13 +3264,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "EntityFramework/6.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-mEvhoXscTyLFMcnbLzKlbWdx6N8fCY2IMe4drjUTMFqOqI4KThnTPXr1m50oXDJAn5PvCy2e90IcwN/OxkJUjg==",
-      "path": "entityframework/6.3.0",
-      "hashPath": "entityframework.6.3.0.nupkg.sha512"
-    },
     "Microsoft.EntityFrameworkCore/2.2.6": {
       "type": "package",
       "serviceable": true,
@@ -3307,6 +3298,13 @@
       "sha512": "sha512-AlB4Gg1nplg6fwieCLixphmYkhwM1SSHecE43oDizAjFUSs7vlL5mlwf620X4SB037pVg+naxhBEtF53TGa6yQ==",
       "path": "microsoft.entityframeworkcore.relational/2.2.6",
       "hashPath": "microsoft.entityframeworkcore.relational.2.2.6.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Tools/2.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L6vi+eT++Q+2jSIWtOB1LD4yB4dR1nQrWg/Wx1kArPo0rD8D9R4uD6LU5OFz3U/ibjADxLgmQmYDqjusrOI7SA==",
+      "path": "microsoft.entityframeworkcore.tools/2.2.6",
+      "hashPath": "microsoft.entityframeworkcore.tools.2.2.6.nupkg.sha512"
     },
     "Remotion.Linq/2.2.0": {
       "type": "package",
@@ -4063,13 +4061,6 @@
       "sha512": "sha512-rCGBF6Hab9633Dh2xtiAcJnDxf2CjaBrGyoagoCoYHH5Ftbdw5zX/e9ABgif5ngzh7DsrBcgxK/3gHBZ2n+TGA==",
       "path": "microsoft.entityframeworkcore.sqlserver/2.2.0",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.2.2.0.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.Tools/2.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-F253CmzpL7eXFKpK++/GIVbyVMZyXYq388osdkggsA1eL7c8ZGwHho0jE3LGA+L6WuXm6KbwQMtnt15zZAqzzA==",
-      "path": "microsoft.entityframeworkcore.tools/2.2.0",
-      "hashPath": "microsoft.entityframeworkcore.tools.2.2.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
       "type": "package",
