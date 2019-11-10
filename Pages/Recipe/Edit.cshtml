@@ -1,0 +1,241 @@
+﻿@page
+@model KetoCalculator.Pages.Recipe.EditModel
+@using KetoCalculator.Areas.Identity.Data
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Recipe - "+Model.Recipe.RecipeName;
+}
+    <h4>Recipe - @Model.Recipe.RecipeName</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Recipe.RecipeId" />
+            <div class="form-group">
+                <label asp-for="Recipe.RecipeName" class="control-label"></label>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <input asp-for="Recipe.RecipeName" class="form-control" />
+                }
+                else
+                {
+                    <label class="form-control">@Model.Recipe.RecipeName</label>
+                }
+
+                <span asp-validation-for="Recipe.RecipeName" class="text-danger"></span>
+            </div>
+            <div class="form-group d-none">
+                <label asp-for="Recipe.RecipieUser" class="control-label"></label>
+                <input asp-for="Recipe.RecipieUser" class="form-control" />
+                <span asp-validation-for="Recipe.RecipieUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Recipe.RecipeMethod" class="control-label"></label>
+                
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <textarea id="RecipeMethod" asp-for="Recipe.RecipeMethod" class="form-control"></textarea>
+                }
+                else
+                {
+                <div class= "border rounded p-1"> @Html.Raw(Model.Recipe.RecipeMethod)</div>
+                }
+                <span asp-validation-for="Recipe.RecipeMethod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Recipe.Calories" class="control-label"></label>
+                <input id="totCalH" type="hidden" asp-for="Recipe.Calories" class="form-control" />
+                <label name="totCal" class="form-control">@Html.DisplayFor(m => m.Recipe.Calories)</label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Recipe.Ratio" class="control-label"></label>
+                <input type="hidden" id="totRatioH" asp-for="Recipe.Ratio" class="form-control" />
+                <label name="totRatio" class="form-control">@Html.DisplayFor(m => m.Recipe.Ratio)</label>
+            </div>
+            <div class="form-group d-none">
+                <label asp-for="Recipe.UpdateDateTime" class="control-label"></label>
+                <input asp-for="Recipe.UpdateDateTime" class="form-control" />
+                <span asp-validation-for="Recipe.UpdateDateTime" class="text-danger"></span>
+            </div>
+
+            @if (Model.Recipe.RecipeId != null)
+            {
+                <div class="">
+                    <hr />
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <a id="NewFood" asp-page="/Recipe/RecipeFoods/Create" asp-route-recid="@Model.Recipe.RecipeId">Add Food</a>
+                    }
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="min-width:250px !important">
+                                    @Html.DisplayNameFor(model => model.RecipeFoods[0].Food.FoodName)
+                                </th>
+                                <th class="text-right">
+                                    @Html.DisplayNameFor(model => model.RecipeFoods[0].Grams)
+                                </th>
+                                <th class="text-right">
+                                    Protein
+                                </th>
+                                <th class="text-right">
+                                    Fat
+                                </th>
+                                <th class="text-right">
+                                    Carbs
+                                </th>
+                                <th class="text-right">
+                                    Ratio
+                                </th>
+                                <th class="text-right">
+                                    Calories
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (var i = 0; i < Model.RecipeFoods.Count; i++)
+                            {
+                                <tr>
+                                    <td style="min-width:250px !important">
+                                        @if (SignInManager.IsSignedIn(User))
+                                        {
+                                            <a asp-page="/Recipe/RecipeFoods/Edit" asp-route-recid="@Model.RecipeFoods[i].RecipeId" asp-route-fooid="@Model.RecipeFoods[i].FoodId">@Html.DisplayFor(modelItem => Model.RecipeFoods[i].Food.FoodName)</a>
+                                        }
+                                        else
+                                        {
+                                            <label>@Html.DisplayFor(modelItem => Model.RecipeFoods[i].Food.FoodName)</label>
+                                        }
+                                    </td>
+                                    <td class="text-right">
+                                        @if (SignInManager.IsSignedIn(User))
+                                        {
+                                            <input type="hidden" asp-for="@Model.RecipeFoods[i].FoodId" class="d-none" />
+                                            <input type="hidden" asp-for="@Model.RecipeFoods[i].RecipeId" class="d-none" />
+                                            <input type="hidden" id="HGrams_@(i)" asp-for="@Model.RecipeFoods[i].Grams" />
+                                            <input type="number" name="Grams" id="Grams_@(i)" value="@Model.RecipeFoods[i].Grams" class="text-right" />
+                                        }
+                                        else
+                                        {
+                                            <label>@Html.DisplayFor(m => m.RecipeFoods[i].Grams)</label>
+                                        }
+                                        <span asp-validation-for="@Model.RecipeFoods[i].Grams" class="text-danger"></span>
+                                    </td>
+                                    <td class="text-right">
+                                        <input type="hidden" asp-for="@Model.RecipeFoods[i].Food.ProteinPer100" class="d-none" />
+                                        <input type="hidden" id="P100Protein_@(i)" value="@(Model.RecipeFoods[i].Food.ProteinPer100/100)" />
+                                        <div id="Protein_@(i)" title="Protein per 100 grams: @Model.RecipeFoods[i].Food.ProteinPer100">@string.Format("{0:0.00}", ((Model.RecipeFoods[i].Food.ProteinPer100 / 100) * Model.RecipeFoods[i].Grams))</div>
+                                    </td>
+                                    <td class="text-right">
+                                        <input type="hidden" asp-for="@Model.RecipeFoods[i].Food.FatPer100" class="d-none" />
+                                        <input type="hidden" id="P100Fat_@(i)" value="@(Model.RecipeFoods[i].Food.FatPer100/100)" />
+                                        <div id="Fat_@(i)" title="Fat per 100 grams: @Model.RecipeFoods[i].Food.FatPer100">@string.Format("{0:0.00}", ((Model.RecipeFoods[i].Food.FatPer100 / 100) * Model.RecipeFoods[i].Grams))</div>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <input type="hidden" asp-for="@Model.RecipeFoods[i].Food.CarbPer100" class="d-none" />
+                                        <input type="hidden" id="P100Carb_@(i)" value="@(Model.RecipeFoods[i].Food.CarbPer100/100)" />
+                                        <div id="Carb_@(i)" title="Carbs per 100 grams: @Model.RecipeFoods[i].Food.CarbPer100">@string.Format("{0:0.00}", ((Model.RecipeFoods[i].Food.CarbPer100 / 100) * Model.RecipeFoods[i].Grams))</div>
+                                    </td>
+                                    <td class="text-right">
+                                        @Html.DisplayFor(modelItem => Model.RecipeFoods[i].Food.Ratio)
+                                    </td>
+                                    <td class="text-right">
+                                        <input type="hidden" asp-for="@Model.RecipeFoods[i].Food.Calories" class="d-none" />
+                                        <input type="hidden" id="P100Calories_@(i)" value="@(Model.RecipeFoods[i].Food.Calories/100)" />
+                                        <div id="Calories_@(i)" title="Calories per 100 grams: @Model.RecipeFoods[i].Food.Calories">@string.Format("{0:0.00}", ((Model.RecipeFoods[i].Food.Calories / 100) * Model.RecipeFoods[i].Grams))</div>
+                                    </td>
+                                    <td>
+                                        @if (SignInManager.IsSignedIn(User))
+                                        {
+                                            <a asp-page="/Recipe/RecipeFoods/Edit" asp-route-recid="@Model.RecipeFoods[i].RecipeId" asp-route-fooid="@Model.RecipeFoods[i].FoodId">Delete</a>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                            <tr>
+                                <td style="min-width:250px !important">
+                                    <div class="font-weight-bold">Total</div>
+                                </td>
+                                <td class="text-right">
+                                </td>
+                                <td class="text-right">
+                                    <div id="TableTotProtein" class="font-weight-bold">@string.Format("{0:0.00}", Model.RecipeFoods.Sum(f => (f.Food.ProteinPer100 / 100) * f.Grams))</div>
+                                </td>
+                                <td class="text-right">
+                                    <div id="TableTotFat" class="font-weight-bold">@string.Format("{0:0.00}", Model.RecipeFoods.Sum(f => (f.Food.FatPer100 / 100) * f.Grams))</div>
+                                </td>
+                                <td class="text-right">
+                                    <div id="TableTotCarb" class="font-weight-bold">@string.Format("{0:0.00}", Model.RecipeFoods.Sum(f => (f.Food.CarbPer100 / 100) * f.Grams))</div>
+                                </td>
+                                <td class="text-right">
+                                    <div id="totRatio" class="font-weight-bold">@Html.DisplayFor(m => m.Recipe.Ratio)</div>
+                                </td>
+                                <td class="text-right">
+                                    <div id="totCal" class="font-weight-bold">@Html.DisplayFor(m => m.Recipe.Calories)</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            }
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            }
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+@if (SignInManager.IsSignedIn(User))
+{
+    <script src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=p2i7lwvunskci02cqotz0r5e9sacm04shhnafxbw8ru2r5y8"></script>
+    <script>
+        tinymce.init({
+            selector: '#RecipeMethod',
+            menubar: false,
+            plugins: "lists",
+            toolbar: 'undo redo | styleselect | bold italic | link image | alignleft aligncenter alignright alignjustify| outdent indent| numlist bullist |'
+        });
+    </script>
+}
+    <script>
+        $("[name=Grams]").change(function () {
+            $("#H" + this.id).val(this.value);
+            var num = this.id.replace("Grams_", "");
+            $("#Protein_" + num).text((this.value * $("#P100Protein_" + num).attr("value")).toFixed(2));
+            $("#Fat_" + num).text((this.value * $("#P100Fat_" + num).attr("value")).toFixed(2));
+            $("#Carb_" + num).text((this.value * $("#P100Carb_" + num).attr("value")).toFixed(2));
+            $("#Calories_" + num).text((this.value * $("#P100Calories_" + num).attr("value")).toFixed(2));
+            var totCarb = 0;
+            var totPro = 0;
+            var totFat = 0;
+            var totCal = 0;
+            $("[name=Grams]").each(function () {
+                num = this.id.replace("Grams_", "");
+                totPro += parseFloat($("#Protein_" + num).text());
+                totFat += parseFloat($("#Fat_" + num).text());
+                totCarb += parseFloat($("#Carb_" + num).text());
+                totCal += parseFloat($("#Calories_" + num).text());
+            });
+            var agg = totPro + totCarb;
+            if (agg == 0) { agg = 1 }
+            $("#totRatioH").val((totFat / agg).toFixed(2));
+            $("#totCalH").val(totCal.toFixed(2));
+            $("[name=totRatio]").text((totFat / agg).toFixed(2));
+            $("[name=totCal]").text(totCal.toFixed(2));
+        });
+    </script>

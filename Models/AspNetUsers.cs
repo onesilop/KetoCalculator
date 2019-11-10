@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KetoCalculator.Models
 {
@@ -28,6 +29,12 @@ namespace KetoCalculator.Models
         public DateTimeOffset? LockoutEnd { get; set; }
         public bool LockoutEnabled { get; set; }
         public int AccessFailedCount { get; set; }
+
+        public string Name { get; set; }
+        public string Surname { get; set; }
+
+        [NotMapped]
+        public string FullName { get { return Name + " " + Surname; } }
 
         public virtual ICollection<AspNetUserClaims> AspNetUserClaims { get; set; }
         public virtual ICollection<AspNetUserLogins> AspNetUserLogins { get; set; }

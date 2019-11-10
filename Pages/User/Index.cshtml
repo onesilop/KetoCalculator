@@ -1,0 +1,107 @@
+﻿@page
+@model KetoCalculator.Pages.User.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<input type="hidden" asp-for="AspNetUsers.Id" />
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<input type="hidden" asp-for="AspNetUsers.Id" />
+<div class="form-group">
+    <label asp-for="AspNetUsers.Email" class="control-label"></label>
+    <input asp-for="AspNetUsers.Email" class="form-control" />
+    <span asp-validation-for="AspNetUsers.Email" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="AspNetUsers.Name" class="control-label"></label>
+    <input asp-for="AspNetUsers.Name" class="form-control" />
+    <span asp-validation-for="AspNetUsers.Name" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="AspNetUsers.Surname" class="control-label"></label>
+    <input asp-for="AspNetUsers.Surname" class="form-control" />
+    <span asp-validation-for="AspNetUsers.Surname" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="AspNetUsers.PhoneNumber" class="control-label"></label>
+    <input asp-for="AspNetUsers.PhoneNumber" class="form-control" />
+    <span asp-validation-for="AspNetUsers.PhoneNumber" class="text-danger"></span>
+</div>
+<div class="form-group d-none">
+    <input asp-for="AspNetUsers.UserName" class="form-control" />
+    <input asp-for="AspNetUsers.NormalizedUserName" class="form-control" />
+    <input asp-for="AspNetUsers.NormalizedEmail" class="form-control" />
+    <input asp-for="AspNetUsers.PasswordHash" class="form-control" />
+    <input asp-for="AspNetUsers.SecurityStamp" class="form-control" />
+    <label class="form-check-label">
+        <input class="form-check-input" asp-for="AspNetUsers.EmailConfirmed" /> @Html.DisplayNameFor(model => model.AspNetUsers.EmailConfirmed)
+    </label>
+    <input asp-for="AspNetUsers.ConcurrencyStamp" class="form-control" />
+    <label class="form-check-label">
+        <input class="form-check-input" asp-for="AspNetUsers.PhoneNumberConfirmed" /> @Html.DisplayNameFor(model => model.AspNetUsers.PhoneNumberConfirmed)
+    </label>
+    <label class="form-check-label">
+        <input class="form-check-input" asp-for="AspNetUsers.TwoFactorEnabled" /> @Html.DisplayNameFor(model => model.AspNetUsers.TwoFactorEnabled)
+    </label>
+    <input asp-for="AspNetUsers.LockoutEnd" class="form-control" />
+    <label class="form-check-label">
+        <input class="form-check-input" asp-for="AspNetUsers.LockoutEnabled" /> @Html.DisplayNameFor(model => model.AspNetUsers.LockoutEnabled)
+    </label>
+    <input asp-for="AspNetUsers.AccessFailedCount" class="form-control" />
+</div>
+
+    <p>
+        <a asp-page="Create">Create New</a>
+    </p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserGoals[0].UserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserGoals[0].GoalDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserGoals[0].GoalCalories)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserGoals[0].GoalRatio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserGoals[0].RecipeType)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.UserGoals)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GoalDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GoalCalories)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GoalRatio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RecipeType)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.GoalId">Edit</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.GoalId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

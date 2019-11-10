@@ -1,0 +1,88 @@
+﻿@page
+@model KetoCalculator.Pages.Foods.IndexModel
+@using KetoCalculator.Areas.Identity.Data
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <a asp-page="Create">Create New</a>
+    }
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FoodStuff[0].FoodGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FoodStuff[0].FoodName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FoodStuff[0].ProteinPer100)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FoodStuff[0].FatPer100)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FoodStuff[0].CarbPer100)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FoodStuff[0].Calories)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FoodStuff[0].Ratio)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.FoodStuff)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FoodGroup.FoodGroupName)
+                </td>
+                <td>
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <a asp-page="./Edit" asp-route-id="@item.FoodId">@Html.DisplayFor(modelItem => item.FoodName)</a>
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(modelItem => item.FoodName)
+                    }
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProteinPer100)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FatPer100)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CarbPer100)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Calories)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ratio)
+                </td>
+                <td>
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <a asp-page="./Delete" asp-route-id="@item.FoodId">Delete</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

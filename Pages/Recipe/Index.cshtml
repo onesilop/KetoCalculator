@@ -1,0 +1,68 @@
+﻿@page
+@model KetoCalculator.Pages.Recipe.IndexModel
+@using KetoCalculator.Areas.Identity.Data
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <a asp-page="Edit">Create New</a>
+    }
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Recipes[0].RecipeName)
+            </th>
+            <th class="text-right">
+                @Html.DisplayNameFor(model => model.Recipes[0].Calories)
+            </th>
+            <th class="text-right">
+                Protein
+            </th>
+            <th class="text-right">
+                Carbohydrates
+            </th>
+            <th class="text-right">
+                Fat
+            </th>
+            <th class="text-right">
+                @Html.DisplayNameFor(model => model.Recipes[0].Ratio)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Recipes)
+        {
+        <tr>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.RecipeId">@Html.DisplayFor(modelItem => item.RecipeName)</a>
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.Calories)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.Ratio)
+            </td>
+            <td class="text-right">@Html.DisplayFor(modelItem => item.CalcProtein)</td>
+            <td class="text-right">@Html.DisplayFor(modelItem => item.CalcCarb)</td>
+            <td class="text-right">@Html.DisplayFor(modelItem => item.CalcFat)</td>
+            <td>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <a asp-page="./Delete" asp-route-id="@item.RecipeId">Delete</a>
+                }
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

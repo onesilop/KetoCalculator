@@ -29,6 +29,7 @@ namespace KetoCalculator.Models
         public virtual DbSet<FoodStuff> FoodStuff { get; set; }
         public virtual DbSet<RecipeFood> RecipeFood { get; set; }
         public virtual DbSet<Recipes> Recipes { get; set; }
+        public virtual DbSet<UserGoals> UserGoals { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -148,6 +149,10 @@ namespace KetoCalculator.Models
                 entity.Property(e => e.NormalizedUserName).HasMaxLength(256);
 
                 entity.Property(e => e.UserName).HasMaxLength(256);
+
+                entity.Property(e => e.Name).IsRequired();
+                entity.Property(e => e.Surname).IsRequired();
+
             });
 
             modelBuilder.Entity<DayRecipeFood>(entity =>
@@ -163,6 +168,18 @@ namespace KetoCalculator.Models
                 entity.Property(e => e.Grams).HasColumnType("decimal(18, 2)");
 
                 entity.Property(e => e.UpdateDateTime).HasColumnType("datetime2(0)");
+
+                entity.HasOne(d => d.Food)
+                    .WithMany(p => p.DayRecipeFood)
+                    .HasForeignKey(d => d.FoodId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_DayRecipeFood_FoodStuff");
+
+                entity.HasOne(d => d.DayRecipe)
+                    .WithMany(p => p.DayRecipeFood)
+                    .HasForeignKey(d => new { d.RecipeId, d.RecipeDate })
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_DayRecipeFood_DayRecipes");
             });
 
             modelBuilder.Entity<DayRecipes>(entity =>
@@ -201,6 +218,8 @@ namespace KetoCalculator.Models
             {
                 entity.HasKey(e => e.FoodId);
 
+                entity.HasIndex(e => e.FoodGroupId);
+
                 entity.Property(e => e.FoodId)
                     .HasColumnName("FoodID")
                     .ValueGeneratedNever();
@@ -229,6 +248,8 @@ namespace KetoCalculator.Models
             modelBuilder.Entity<RecipeFood>(entity =>
             {
                 entity.HasKey(e => new { e.RecipeId, e.FoodId });
+
+                entity.HasIndex(e => e.FoodId);
 
                 entity.Property(e => e.RecipeId).HasColumnName("RecipeID");
 
@@ -269,6 +290,26 @@ namespace KetoCalculator.Models
 
                 entity.Property(e => e.UpdateDateTime).HasColumnType("datetime2(0)");
             });
+
+            modelBuilder.Entity<UserGoals>(entity =>
+            {
+                entity.HasKey(e => e.GoalId);
+
+                entity.Property(e => e.GoalId)
+                    .HasColumnName("GoalID")
+                    .ValueGeneratedNever();
+
+                entity.Property(e => e.GoalCalories).HasColumnType("numeric(18, 0)");
+
+                entity.Property(e => e.GoalDate).HasColumnType("datetime2(0)");
+
+                entity.Property(e => e.GoalRatio).HasColumnType("numeric(18, 2)");
+
+                entity.Property(e => e.UserId)
+                    .IsRequired()
+                    .HasMaxLength(450);
+            });
         }
+    
     }
 }

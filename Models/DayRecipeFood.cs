@@ -10,5 +10,8 @@ namespace KetoCalculator.Models
         public DateTime RecipeDate { get; set; }
         public decimal Grams { get; set; }
         public DateTime UpdateDateTime { get; set; }
+
+        public virtual FoodStuff Food { get; set; }
+        public virtual DayRecipes DayRecipe { get; set; }
     }
 }
