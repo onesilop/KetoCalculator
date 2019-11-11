@@ -1,11 +1,24 @@
 ﻿@page
+@using Microsoft.AspNetCore.Identity
+@using KetoCalculator.Areas.Identity.Data
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
 
-    <div class="container-fluid">
-        <div class="row">
+<div class="container-fluid">
+    <div class="row">
+        @if (SignInManager.IsSignedIn(User))
+        {
+
+        }
+        else
+        {
             <div class="col-lg">
                 <h3 class="card-title">Ketogenic diet</h3>
                 <div class="text-body"><p>A ketogenic (or ‘keto’) diet is a low-carbohydrate, high-fat diet. Although it has benefits as a medical treatment for certain groups of people, there is little evidence to recommend it as a long-term weight loss technique for healthy people.</p></div>
@@ -60,10 +73,14 @@
             <div class="col-sm">
                 <h3 class="card-title">Keto Calculator</h3>
                 <p>This Keto Calculator is for the use of people wanting to calculate their keto ratio and calories for meals as prescribed by a dietition.<p />
-                <p><a id="login" asp-area="Identity" asp-page="/Account/Login">Login</a> to start recording and calculating.
-                If you are not yet registered do so <a id="register" asp-area="Identity" asp-page="/Account/Register">here</a>.</p>
+                <p>
+                    <a id="login" asp-area="Identity" asp-page="/Account/Login">Login</a> to start recording and calculating.
+                    If you are not yet registered do so <a id="register" asp-area="Identity" asp-page="/Account/Register">here</a>.
+                </p>
                 You can browse the <a asp-page="/Recipe/Index">recipes here</a> if you just want to have a look.
 
             </div>
-        </div>
-        </div>
+
+        }
+    </div>
+</div>

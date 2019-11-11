@@ -29,7 +29,7 @@ namespace KetoCalculator.Pages.Recipe
                     .ToListAsync(); ;
             }  else
             {
-                Recipes = await _context.Recipes.Where(r => r.RecipieUser.ToString() == uId)
+                Recipes = await _context.Recipes.Where(r => r.RecipeUser.ToString() == uId)
                     .Include(r => r.RecipeFood)
                     .ThenInclude(f => f.Food)
                     .ToListAsync();

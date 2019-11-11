@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="onesilop-001-site3" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Carlo\\Documents\\GitHub\\KetoCalculator\\obj\\Release\\netcoreapp2\.2\\PubTmp\\Out\\$" />
+  <parameter name="IIS Web Application Name" description="" value="KetoCalculator20191111070207" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\a138768\\OneDrive\ -\ AGL\ Energy\\Projects\\Code\\KetoCalculator\\obj\\Release\\netcoreapp2\.2\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>

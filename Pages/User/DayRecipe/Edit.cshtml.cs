@@ -25,17 +25,19 @@ namespace KetoCalculator.Pages.User.DayRecipe
         public IList<DayRecipeFood> RecipeFoods { get; set; }
 
 
-        public async Task<IActionResult> OnGetAsync(Guid? id = null)
+        public async Task<IActionResult> OnGetAsync(Guid? id = null, long tics = -1)
         {
+            if (tics == -1) { tics = DateTime.UtcNow.Date.Ticks; }
             if (id == null)
             {
                 Recipe = new DayRecipes();
                 RecipeFoods = new List<DayRecipeFood>();
+                Recipe.RecipeDate = new DateTime(tics);
             }
             else
             { 
                 Recipe = await _context.DayRecipes
-                    .Include(r => r.DayRecipeFood).FirstOrDefaultAsync(m => m.RecipeId == id);
+                    .Include(r => r.DayRecipeFood).FirstOrDefaultAsync(m => m.RecipeId == id && m.RecipeDate == new DateTime(tics));
                 RecipeFoods = await _context.DayRecipeFood.Where(rf => rf.RecipeId == Recipe.RecipeId)
                     .Include(f => f.Food).ToListAsync();
             }

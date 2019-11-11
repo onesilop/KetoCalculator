@@ -148,6 +148,9 @@ namespace KetoCalculator.Migrations
 
                     b.Property<DateTimeOffset?>("LockoutEnd");
 
+                    b.Property<string>("Name")
+                        .IsRequired();
+
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256);
 
@@ -161,6 +164,9 @@ namespace KetoCalculator.Migrations
                     b.Property<bool>("PhoneNumberConfirmed");
 
                     b.Property<string>("SecurityStamp");
+
+                    b.Property<string>("Surname")
+                        .IsRequired();
 
                     b.Property<bool>("TwoFactorEnabled");
 
@@ -199,6 +205,10 @@ namespace KetoCalculator.Migrations
 
                     b.HasKey("RecipeId", "FoodId", "RecipeDate");
 
+                    b.HasIndex("FoodId");
+
+                    b.HasIndex("RecipeId", "RecipeDate");
+
                     b.ToTable("DayRecipeFood");
                 });
 
@@ -216,11 +226,13 @@ namespace KetoCalculator.Migrations
                     b.Property<decimal>("Ratio")
                         .HasColumnType("decimal(18, 2)");
 
+                    b.Property<string>("RecipeMethod");
+
                     b.Property<string>("RecipeName")
                         .IsRequired()
                         .HasMaxLength(100);
 
-                    b.Property<Guid>("RecipieUser");
+                    b.Property<Guid>("RecipeUser");
 
                     b.Property<DateTime>("UpdateDateTime")
                         .HasColumnType("datetime2(0)");
@@ -310,11 +322,13 @@ namespace KetoCalculator.Migrations
                     b.Property<decimal>("Ratio")
                         .HasColumnType("decimal(18, 2)");
 
+                    b.Property<string>("RecipeMethod");
+
                     b.Property<string>("RecipeName")
                         .IsRequired()
                         .HasMaxLength(100);
 
-                    b.Property<Guid?>("RecipieUser");
+                    b.Property<Guid?>("RecipeUser");
 
                     b.Property<DateTime>("UpdateDateTime")
                         .HasColumnType("datetime2(0)");
@@ -322,6 +336,31 @@ namespace KetoCalculator.Migrations
                     b.HasKey("RecipeId");
 
                     b.ToTable("Recipes");
+                });
+
+            modelBuilder.Entity("KetoCalculator.Models.UserGoals", b =>
+                {
+                    b.Property<Guid>("GoalId")
+                        .HasColumnName("GoalID");
+
+                    b.Property<decimal>("GoalCalories")
+                        .HasColumnType("numeric(18, 0)");
+
+                    b.Property<DateTime>("GoalDate")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<decimal>("GoalRatio")
+                        .HasColumnType("numeric(18, 2)");
+
+                    b.Property<Guid?>("RecipeType");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasMaxLength(450);
+
+                    b.HasKey("GoalId");
+
+                    b.ToTable("UserGoals");
                 });
 
             modelBuilder.Entity("KetoCalculator.Models.AspNetRoleClaims", b =>
@@ -367,6 +406,19 @@ namespace KetoCalculator.Migrations
                         .WithMany("AspNetUserTokens")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("KetoCalculator.Models.DayRecipeFood", b =>
+                {
+                    b.HasOne("KetoCalculator.Models.FoodStuff", "Food")
+                        .WithMany("DayRecipeFood")
+                        .HasForeignKey("FoodId")
+                        .HasConstraintName("FK_DayRecipeFood_FoodStuff");
+
+                    b.HasOne("KetoCalculator.Models.DayRecipes", "DayRecipe")
+                        .WithMany("DayRecipeFood")
+                        .HasForeignKey("RecipeId", "RecipeDate")
+                        .HasConstraintName("FK_DayRecipeFood_DayRecipes");
                 });
 
             modelBuilder.Entity("KetoCalculator.Models.FoodStuff", b =>

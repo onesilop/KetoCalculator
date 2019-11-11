@@ -17,7 +17,7 @@ namespace KetoCalculator.Models
         public string RecipeName { get; set; }
         [DisplayName("Method")]
         public string RecipeMethod { get; set; }
-        public Guid RecipieUser { get; set; }
+        public Guid RecipeUser { get; set; }
         public decimal Calories { get; set; }
         public decimal Ratio { get; set; }
         [DisplayName("Last Updated")]

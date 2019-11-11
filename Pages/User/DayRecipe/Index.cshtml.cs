@@ -20,7 +20,7 @@ namespace KetoCalculator.Pages.User.DayRecipe
 
         public IList<DayRecipes> Recipes { get;set; }
 
-        public async Task OnGetAsync(Boolean All=true,string uId = null )
+        public async Task OnGetAsync(bool All =true,string uId = null )
         {
            if (All || uId == null){
                 Recipes = await _context.DayRecipes
@@ -29,7 +29,7 @@ namespace KetoCalculator.Pages.User.DayRecipe
                     .ToListAsync(); ;
             }  else
             {
-                Recipes = await _context.DayRecipes.Where(r => r.RecipieUser.ToString() == uId)
+                Recipes = await _context.DayRecipes.Where(r => r.RecipeUser.ToString() == uId)
                     .Include(r => r.DayRecipeFood)
                     .ThenInclude(f => f.Food)
                     .ToListAsync();

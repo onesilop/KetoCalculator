@@ -30,7 +30,8 @@
           "Microsoft.EntityFrameworkCore.Design": "2.2.6",
           "Microsoft.EntityFrameworkCore.Tools": "2.2.6",
           "Microsoft.NETCore.App": "2.2.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.4"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.4",
+          "Moment.js": "2.24.0"
         },
         "runtime": {
           "KetoCalculator.dll": {}
@@ -263,6 +264,7 @@
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
         }
       },
+      "Moment.js/2.24.0": {},
       "NuGet.Frameworks/4.7.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3"
@@ -3682,6 +3684,13 @@
       "sha512": "sha512-NFflOxpi1ueszxM/f4yaejbSNI93IennOLD2VNQGkcP/pXm1AlcWro7lB0OeDaVtnJpufoME8Fm2ai0CUfKfow==",
       "path": "microsoft.visualstudio.web.codegenerators.mvc/2.2.4",
       "hashPath": "microsoft.visualstudio.web.codegenerators.mvc.2.2.4.nupkg.sha512"
+    },
+    "Moment.js/2.24.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EklynJ92k3/mjOu+ux0CQvXMZqPkkuuV5SuGQNfAnbsVIdNEa8Lj0HQovfbeK4xRlFJ6BAMQB05esoM1KkyvNg==",
+      "path": "moment.js/2.24.0",
+      "hashPath": "moment.js.2.24.0.nupkg.sha512"
     },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",

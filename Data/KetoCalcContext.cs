@@ -1,10 +1,21 @@
 ﻿using System;
+using KetoCalculator.Areas.Identity.Data;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Configuration;
 
 namespace KetoCalculator.Models
 {
+
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+        }
+    }
+
     public partial class KetoCalcContext : DbContext
     {
         public KetoCalcContext()
@@ -312,4 +323,7 @@ namespace KetoCalculator.Models
         }
     
     }
+    
+
+
 }

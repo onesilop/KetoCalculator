@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using KetoCalculator.Areas.Identity.Data;
+using KetoCalculator.Models;
 
 namespace KetoCalculator.Areas.Identity.Pages.Account.Manage
 {
@@ -41,6 +42,16 @@ namespace KetoCalculator.Areas.Identity.Pages.Account.Manage
         public class InputModel
         {
             [Required]
+            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
+            [Display(Name = "Name")]
+            public string Name { get; set; }
+
+            [Required]
+            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
+            [Display(Name = "Surname")]
+            public string Surname { get; set; }
+
+            [Required]
             [EmailAddress]
             public string Email { get; set; }
 
@@ -62,12 +73,15 @@ namespace KetoCalculator.Areas.Identity.Pages.Account.Manage
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
 
             Username = userName;
+            ApplicationUser usr = _userManager.GetUserAsync(User).Result;
 
             Input = new InputModel
             {
                 Email = email,
-                PhoneNumber = phoneNumber
-            };
+                PhoneNumber = phoneNumber,
+                Name = usr.Name,
+                Surname = usr.Surname
+        };
 
             IsEmailConfirmed = await _userManager.IsEmailConfirmedAsync(user);
 
@@ -109,8 +123,21 @@ namespace KetoCalculator.Areas.Identity.Pages.Account.Manage
                 }
             }
 
+            user.Email = Input.Email;
+            user.PhoneNumber = Input.PhoneNumber;
+            user.Name = Input.Name;
+            user.Surname = Input.Surname;
+
+            var setUser = await _userManager.UpdateAsync(user);
+            if (!setUser.Succeeded)
+            {
+                var userId = await _userManager.GetUserIdAsync(user);
+                throw new InvalidOperationException($"Unexpected error occurred setting name for user with ID '{userId}'.");
+            }        
+
             await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Your profile has been updated";
+            TempData["UserMessage"] = "Your profile has been updated";
+            TempData["UserMessageClass"] = "alert-success";
             return RedirectToPage();
         }
 
@@ -141,7 +168,8 @@ namespace KetoCalculator.Areas.Identity.Pages.Account.Manage
                 "Confirm your email",
                 $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
-            StatusMessage = "Verification email sent. Please check your email.";
+            TempData["UserMessage"] = "Verification email sent. Please check your email.";
+            TempData["UserMessageClass"] = "";
             return RedirectToPage();
         }
     }
