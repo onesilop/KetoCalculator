@@ -1,0 +1,41 @@
+﻿@page
+@model KetoCalculator.Pages.Foodgroups.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FoodGroup[0].FoodGroupName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FoodGroup[0].UpdateDatetime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.FoodGroup) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FoodGroupName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UpdateDatetime)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.FoodGroupId">Edit</a> |
+                <a asp-page="./Delete" asp-route-id="@item.FoodGroupId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

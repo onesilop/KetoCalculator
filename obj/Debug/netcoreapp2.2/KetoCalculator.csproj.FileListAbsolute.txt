@@ -1,0 +1,164 @@
+C:\Users\Carlo\source\repos\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.deps.json
+C:\Users\Carlo\source\repos\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.runtimeconfig.json
+C:\Users\Carlo\source\repos\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.runtimeconfig.dev.json
+C:\Users\Carlo\source\repos\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.dll
+C:\Users\Carlo\source\repos\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.pdb
+C:\Users\Carlo\source\repos\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.Views.dll
+C:\Users\Carlo\source\repos\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.Views.pdb
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.csprojAssemblyReference.cache
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorAssemblyInfo.cache
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorAssemblyInfo.cs
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.AssemblyInfoInputs.cache
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.AssemblyInfo.cs
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.TagHelpers.input.cache
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.TagHelpers.output.cache
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorCoreGenerate.cache
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Error.g.cshtml.cs
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Index.g.cshtml.cs
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Privacy.g.cshtml.cs
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_Layout.g.cshtml.cs
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorTargetAssemblyInfo.cache
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorTargetAssemblyInfo.cs
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.Views.pdb
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.dll
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.pdb
+C:\Users\Carlo\source\repos\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.csproj.CopyComplete
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.deps.json
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.runtimeconfig.json
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.runtimeconfig.dev.json
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.dll
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.pdb
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.Views.dll
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.Views.pdb
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.csprojAssemblyReference.cache
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorAssemblyInfo.cache
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorAssemblyInfo.cs
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.AssemblyInfoInputs.cache
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.AssemblyInfo.cs
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.TagHelpers.input.cache
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.TagHelpers.output.cache
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorCoreGenerate.cache
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Error.g.cshtml.cs
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Index.g.cshtml.cs
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Privacy.g.cshtml.cs
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_Layout.g.cshtml.cs
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorTargetAssemblyInfo.cache
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorTargetAssemblyInfo.cs
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.Views.pdb
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.dll
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.pdb
+C:\Users\Carlo\Documents\GitHub\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.csproj.CopyComplete
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorAssemblyInfo.cache
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorAssemblyInfo.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.AssemblyInfoInputs.cache
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.AssemblyInfo.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.TagHelpers.input.cache
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.TagHelpers.output.cache
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorCoreGenerate.cache
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\AccessDenied.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ExternalLogin.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Lockout.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\LoginWith2fa.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Admin\Roles\Delete.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Admin\Roles\Edit.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Admin\Roles\Index.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Admin\UserRole\Create.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Admin\UserRole\Delete.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Admin\UserRole\Edit.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Admin\UserRole\Index.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Admin\Users\Create.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Admin\Users\Delete.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Admin\Users\Edit.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Admin\Users\Index.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Error.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Foodgroups\Create.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Foodgroups\Delete.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Foodgroups\Edit.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Foodgroups\Index.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Foods\Create.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Foods\Delete.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Foods\Edit.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Foods\Index.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Index.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Recipe\Delete.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Recipe\Edit.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Recipe\Index.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Recipe\RecipeFoods\Create.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Recipe\RecipeFoods\Delete.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_LoginPartialBottom.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_LoginPartialTop.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\User\Calendar.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\User\Create.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\User\DayRecipe\DayRecipeFoods\Create.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\User\DayRecipe\DayRecipeFoods\Delete.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\User\DayRecipe\Delete.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\User\DayRecipe\Edit.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\User\DayRecipe\Index.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\User\Delete.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\User\Edit.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\User\Index.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorTargetAssemblyInfo.cache
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.RazorTargetAssemblyInfo.cs
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.dll
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.pdb
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.deps.json
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.runtimeconfig.json
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.runtimeconfig.dev.json
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.dll
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.pdb
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.Views.dll
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\bin\Debug\netcoreapp2.2\KetoCalculator.Views.pdb
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.Views.pdb
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.csproj.CopyComplete
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\KetoCalculator.csprojAssemblyReference.cache
+C:\Users\a138768\OneDrive - AGL Energy\Projects\Code\KetoCalculator\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs

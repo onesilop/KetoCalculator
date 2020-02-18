@@ -1,0 +1,65 @@
+﻿@page
+@model KetoCalculator.Pages.Recipe.RecipeFoods.CreateModel
+
+<h4>RecipeFood</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group d-none">
+                <label asp-for="RecipeFood.RecipeId" class="control-label"></label>
+                <select asp-for="RecipeFood.RecipeId" class="form-control" asp-items="ViewBag.RecipeId">
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Available_Foodgroups.FoodGroupId" class="control-label"></label>
+                <select id="FoodGroup" asp-for="Available_Foodgroups.FoodGroupId" class="form-control" asp-items="ViewBag.FoodGroupId">
+                    <option disabled selected value="">Select Food Group</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="RecipeFood.FoodId" class="control-label"></label>
+                <select id="FoodId" asp-for="RecipeFood.FoodId" class="form-control">
+                    <option disabled selected value="">Select Food</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="RecipeFood.Grams" class="control-label"></label>
+                <input asp-for="RecipeFood.Grams" class="form-control" />
+                <span asp-validation-for="RecipeFood.Grams" class="text-danger"></span>
+            </div>
+            <div class="form-group d-none">
+                <label asp-for="RecipeFood.UpdateDateTime" class="control-label"></label>
+                <input asp-for="RecipeFood.UpdateDateTime" class="form-control" />
+                <span asp-validation-for="RecipeFood.UpdateDateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<script>
+    $(document).ready(function() {
+        $("#FoodGroup").on("change", function() {
+            var Id = $(this).val();
+            $("#FoodId").empty();
+            $("#FoodId").append('<option disabled selected value="">Select Food</option>');
+            $.getJSON(`?handler=Foods&FoodGroupId=${Id}`, (data) => {
+                $.each(data, function (i, item) {
+                     $("#FoodId").append(`<option value="${item.foodId}">${item.foodName}</option>`);
+                });
+            });
+        });
+    });
+  
+</script>

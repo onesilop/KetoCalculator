@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA5dv0cHnU2kaEXurEAHWZGwAAAAACAAAAAAADZgAAwAAAABAAAAAMn4ae+SPRb/U1iBAGpi9WAAAAAASAAACgAAAAEAAAALexegGRJ3jMsmHL76nkaB2AAAAA9CF2L2CWJSQQr9VvpFyJZIrSbS2jZrcEj9V8+cxW6ACIGdu5xLqmEkiqExPZ+ue0YRpaMZCYn/KPsOelh5hD/XeTdOLS+reEUSm6MqiYHzo15s8Wh3IZwInGA4fcI4CWYmrRAssie6+xOC0JEBRxhVlN5K+KIN9XdOpdnuH8FjsUAAAA+/LXqChIIF6ArO6XH30yr1/raVg=</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:cp-databaseserver.database.windows.net,1433%3bInitial Catalog=KetoCalculator%3bUser Id=onesilop%40cp-databaseserver%3bPassword=0nesilop%4021</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

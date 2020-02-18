@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtWgYO2wx7EW8pBIrX1QkbgAAAAACAAAAAAAQZgAAAAEAACAAAAC41HOvFM4cuFZ67duT0dl2PKfH6uL/beQjk/7+6CX8VAAAAAAOgAAAAAIAACAAAABFQJjVdxp4UYCxQBmT2aW9pXcMvuu3W7g/V2gI1WDYeCAAAACyP2OYzS2iN3QNkDC3E2PDJyE/z0frfgSNZlYlH0BB6UAAAAD5ZS6pLfFe3K3xHb2XoPHf4sWiLV3YUJfcAizsyslpttbwYIREToRf14WRl+c+ysvfcvpMRxTfeYH0eHLb5M/h</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=SQL5047.site4now.net%3bInitial Catalog=DB_A479AF_KetoCalc%3bUser Id=DB_A479AF_KetoCalc_admin%3bPassword=Onesilop%4021%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
