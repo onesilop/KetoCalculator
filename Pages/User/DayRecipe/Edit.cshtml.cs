@@ -60,7 +60,7 @@ namespace KetoCalculator.Pages.User.DayRecipe
                 return Page();
             }
 
-            if (RecipesExists(Recipe.RecipeId))
+            if (RecipesExists(Recipe.RecipeId, Recipe.RecipeDate))
             {
                 _context.Attach(Recipe).State = EntityState.Modified;
             }
@@ -85,7 +85,7 @@ namespace KetoCalculator.Pages.User.DayRecipe
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!RecipesExists(Recipe.RecipeId))
+                if (!RecipesExists(Recipe.RecipeId,Recipe.RecipeDate))
                 {
                     return NotFound();
                 }
@@ -98,9 +98,9 @@ namespace KetoCalculator.Pages.User.DayRecipe
             return RedirectToPage("./Index");
         }
 
-        private bool RecipesExists(Guid id)
+        private bool RecipesExists(Guid id,DateTime dte)
         {
-            return _context.DayRecipes.Any(e => e.RecipeId == id);
+            return _context.DayRecipes.Any(e => e.RecipeId == id && e.RecipeDate == dte);
         }
     }
 }

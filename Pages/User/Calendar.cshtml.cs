@@ -17,6 +17,7 @@ namespace KetoCalculator.Pages.User
         private readonly UserManager<ApplicationUser> _userManager;
         
         public IList<DayRecipes> DayRecipes { get; set; }
+        public IList<CalendarItem> Events { get; set; }
 
 
         public CalendarModel(KetoCalculator.Models.KetoCalcContext context, UserManager<ApplicationUser> userManager)
@@ -40,6 +41,14 @@ namespace KetoCalculator.Pages.User
                     .Include(r => r.DayRecipeFood)
                     .ThenInclude(f => f.Food)
                     .ToListAsync();
+            }
+            Events = new List<CalendarItem>();
+            foreach (DayRecipes dr in DayRecipes)
+            {
+                CalendarItem e = new CalendarItem();
+                e.Title = dr.RecipeName;
+                e.Url = $"/User/DayRecipe/Edit?id={dr.RecipeId}&tics={dr.RecipeDate.Ticks}";
+                e.SetHighlightClass("OK");
             }
         }
     }

@@ -15,7 +15,7 @@ namespace KetoCalculator.Helpers
 
         public int Year { get; set; }
 
-        public IList<DayRecipes> DayRecipes { get; set; }
+        public IList<CalendarItem> Events { get; set; }
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
@@ -28,7 +28,7 @@ namespace KetoCalculator.Helpers
         private string GetHtml()
         {
             var monthStart = new DateTime(Year, Month, 1);
-            var events = DayRecipes?.GroupBy(e => e.RecipeDate);
+            var events = Events?.GroupBy(e => e.Date);
 
             var html = new XDocument(
                 new XElement("div",
@@ -99,10 +99,10 @@ namespace KetoCalculator.Helpers
             {
                 return events?.SingleOrDefault(e => e.Key == d)?.Select(e =>
                     new XElement("a",
-                        new XAttribute("class", $"event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate"),
-                        new XAttribute("title", e.RecipeName),
-                        new XAttribute("href", "/Users/DayRecipe/Index?id="+e.RecipeId+"&tics="+e.RecipeDate.Ticks.ToString()),
-                         e.RecipeName
+                        new XAttribute("class", $"event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate {e.HighlightClass}"),
+                        new XAttribute("title", e.Title),
+                        new XAttribute("href", e.Url),
+                         e.Title
                     )
                 ) ?? new[] {
                 new XElement("p",
